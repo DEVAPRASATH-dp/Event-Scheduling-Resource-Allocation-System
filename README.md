@@ -167,10 +167,7 @@ This assignment tests:
 
 ---
 
-## 📬 Submission Instructions (As per Aerele)
-1. Push project to GitHub  
-2. Add screenshots + demo video in README  
-3. Email with subject:  
-   **“Assignment Submission - Event Scheduling & Resource Allocation System”**
+## 📬 Demo video and Screenshots
+Drive Link - https://drive.google.com/drive/folders/15qomVfBNgTlw2HHivUeljlSVKV5bIkpQ?usp=sharing
 
 
