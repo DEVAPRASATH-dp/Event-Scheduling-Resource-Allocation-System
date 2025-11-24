@@ -98,26 +98,6 @@ Event-Scheduling-Resource-Allocation-System/
 └── static/
     └── styles.css
 ```
-
----
-
-## ▶️ Running the Application
-
-### **1️⃣ Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **2️⃣ Run the Flask server**
-```bash
-python app.py
-```
-
-### **3️⃣ Open the application**
-```
-http://127.0.0.1:5000/
-```
-
 ---
 
 ## 📝 How to Use the Application
@@ -155,15 +135,6 @@ This assignment tests:
 - Conflict detection  
 - UI design  
 - End-to-end project building  
-
----
-
-## 🛠 Future Enhancements
-- User authentication  
-- Calendar-style event view  
-- Search and filters  
-- Multiple resource allocation per event  
-- Export report as PDF  
 
 ---
 
