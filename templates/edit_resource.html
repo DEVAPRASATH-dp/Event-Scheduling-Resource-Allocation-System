@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Resource</h2>
+<form method="POST" class="form-container">
+    
+    <label>Resource Name:</label>
+    <input type="text" name="name" value="{{ resource.name }}"required>
+
+    <label>Resource Type:</label>
+    <input type="text" name="type" value="{{ resource.type }}"required>
+
+    <button type="submit" class="btn">Save Changes</button>
+</form>
+{% endblock %}

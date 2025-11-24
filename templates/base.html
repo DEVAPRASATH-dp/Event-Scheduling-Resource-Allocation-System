@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Scheduling System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Event Scheduling System</h1>
+<div class="container">
+    <a href="/">Home</a> |
+    <a href="/events">Events</a> |
+    <a href="/resources">Resources</a> |
+    <a href="/allocate">Allocate</a> |
+    <a href="/report">Report</a>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul style="color:red;">
+                {% for msg in messages %}
+                    <li>{{msg}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

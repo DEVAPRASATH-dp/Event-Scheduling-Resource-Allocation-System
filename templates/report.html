@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Resource Utilisation Report</h2>
+<form method="POST">
+    <p>Start: <input type="datetime-local" name="start"></p>
+    <p>End: <input type="datetime-local" name="end"></p>
+    <button type="submit">Generate</button>
+</form>
+<hr>
+{% for item in data %}
+    <h3>{{ item.resource.name }} ({{ item.resource.type }})</h3>
+    <p>Total Hours Used: {{ item.hours }}</p>
+    <b>Upcoming Events:</b>
+    <ul>
+        {% for ev in item.upcoming %}
+        <li>{{ ev.title }} on {{ ev.start_time }}</li>
+        {% endfor %}
+    </ul>
+    <hr>
+{% endfor %}
+{% endblock %}
