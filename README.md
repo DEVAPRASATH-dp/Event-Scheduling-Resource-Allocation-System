@@ -1,7 +1,7 @@
 # 📌 Event Scheduling & Resource Allocation System
 
 A simple, clean, and lightweight Flask web application that helps organisations manage events and shared resources without conflicts.  
-This project was created as part of the **Aerele Technology hiring assignment**.
+
 
 ---
 
