@@ -1,91 +1,87 @@
-# Event-Scheduling-Resource-Allocation-System
+# 📌 Event Scheduling & Resource Allocation System
 
-This is a small Flask web application built for managing events and shared resources inside an organisation.
-It helps schedule workshops, meetings, classes and assign resources like rooms, instructors, or equipment without conflicts.
+A simple, clean, and lightweight Flask web application that helps organisations manage events and shared resources without conflicts.  
+This project was created as part of the **Aerele Technology hiring assignment**.
 
-The app focuses on being simple, clean, and easy to use.
+---
 
-Features
-Event Management
+## 🚀 Features
 
-Add new events
+### 🗓️ Event Management
+- Add new events
+- Edit existing events
+- Delete events
+- Event fields:
+  - Title  
+  - Description  
+  - Start Time  
+  - End Time  
+- Automatic validation ensures **end time must be after start time**
+- Events shown in a **clean, structured table**
+- Dates shown as **DD/MM/YYYY**
+- Time shown in **12-hour format (AM/PM)**
 
-Edit and delete events
+---
 
-Includes event title, description, start time and end time
+### 🧰 Resource Management
+- Add / Edit / Delete resources
+- Resource fields:
+  - Resource Name  
+  - Resource Type (Room, Instructor, Equipment, etc.)
+- Displayed in a **modern table UI**
 
-Shows events in a clean table format
+---
 
-Time is displayed in day/month/year + 12-hour format
+### 🔗 Resource Allocation
+- Allocate a resource to an event
+- Allocation table contains:
+  - Event Name  
+  - Resource Name  
+  - Status  
+  - Edit / Delete actions  
+- UI clearly shows what is allocated and to which event
 
-Resource Management
+---
 
-Add different types of resources
-
-Edit and delete resources
-
-Resource type can be room, instructor, equipment, etc.
-
-Structured table view for better readability
-
-Resource Allocation
-
-Allocate a resource to an event
-
-Edit or delete allocations
-
-Allocation table shows:
-
-Event Name
-
-Resource Name
-
-Status (Allocated)
-
-Actions
-
-Conflict Detection
-
+### ⚠️ Conflict Detection Logic
 The system prevents:
+- Double-booking of the same resource
+- Time overlaps
+- Same start and end time
+- Nested overlaps
+- Partial overlap between two events
 
-Double-booking of a resource
+If a conflict exists, the user sees a clear error message.
 
-Overlapping event timings
+---
 
-Cases like:
+### 📊 Resource Utilisation Report
+Pick a date range → System calculates:
+- Total hours used by each resource
+- Upcoming bookings
+- Event durations
 
-same start/end time
+---
 
-nested events
+## 🏗️ Tech Stack
 
-partial overlaps
+| Component | Technology |
+|----------|------------|
+| Backend  | Flask (Python) |
+| Database | SQLite + SQLAlchemy ORM |
+| Frontend | HTML, CSS, Jinja2 Templates |
+| Styling  | Custom CSS |
 
-A warning is shown if a conflict occurs.
+---
 
-Resource Utilisation Report
+## 📁 Project Structure
 
-Users can:
-
-Select a date range
-
-View the total number of hours each resource is used
-
-View upcoming bookings
-
-Technology Used
-
-Python (Flask framework)
-
-SQLite (default lightweight database)
-
-HTML, CSS, Jinja2
-
-Bootstrap-like custom UI styling
-
-Project Structure
+```
 Event-Scheduling-Resource-Allocation-System/
 │
 ├── app.py
+├── config.py
+├── models.py
 ├── requirements.txt
 │
 ├── templates/
@@ -102,76 +98,80 @@ Event-Scheduling-Resource-Allocation-System/
 │
 └── static/
     └── styles.css
+```
 
-How to Run the Project
-1️⃣ Install dependencies
+---
+
+## ▶️ Running the Application
+
+### **1️⃣ Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-2️⃣ Start Flask server
+### **2️⃣ Run the Flask server**
+```bash
 python app.py
+```
 
-3️⃣ Open in browser
+### **3️⃣ Open the application**
+```
 http://127.0.0.1:5000/
+```
 
-How to Use the System
-1. Create Resources
+---
 
-Add all required resources first:
+## 📝 How to Use the Application
 
-Rooms
+### ✔ Create Resources
+Examples:
+- Projector  
+- Classroom  
+- Trainer  
 
-Instructors
+### ✔ Create Events
+Provide:
+- Title  
+- Description  
+- Start Time & End Time  
 
-Equipment
+### ✔ Allocate Resources
+Choose:
+- Event  
+- Resource  
+- The system checks for conflicts
 
-2. Create Events
-
-Add events with:
-
-Title
-
-Description
-
-Start & End times
-
-3. Allocate Resources
-
-Choose an event → choose a resource → allocate.
-If the time overlaps with another booked event, the system will warn you.
-
-4. View Reports
-
+### ✔ View Reports
 Select a date range to see:
+- Utilisation hours  
+- Future bookings  
 
-Total hours used
+---
 
-Upcoming allocations
+## 🎯 Purpose of This Project
+This assignment tests:
+- Flask fundamentals  
+- Backend logic  
+- Database relationships  
+- Conflict detection  
+- UI design  
+- End-to-end project building  
 
-Purpose of the Project
+---
 
-This project was created as part of a hiring test.
-It demonstrates:
+## 🛠 Future Enhancements
+- User authentication  
+- Calendar-style event view  
+- Search and filters  
+- Multiple resource allocation per event  
+- Export report as PDF  
 
-Understanding of Flask
+---
 
-Backend logic with validation
+## 📬 Submission Instructions (As per Aerele)
+1. Push project to GitHub  
+2. Add screenshots + demo video in README  
+3. Email with subject:  
+   **“Assignment Submission - Event Scheduling & Resource Allocation System”**
 
-Database relationships
 
-UI building
-
-Conflict detection logic
-
-Ability to build a full working web application independently
-
-Possible Future Enhancements
-
-User login system
-
-Calendar view for events
-
-Filtering and search
-
-Multiple resource allocation at once
-
-Notification system
