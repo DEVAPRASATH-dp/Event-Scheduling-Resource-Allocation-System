@@ -82,7 +82,6 @@ Event-Scheduling-Resource-Allocation-System/
 ├── app.py
 ├── config.py
 ├── models.py
-├── requirements.txt
 │
 ├── templates/
 │   ├── base.html
