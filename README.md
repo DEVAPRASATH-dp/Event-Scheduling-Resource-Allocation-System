@@ -1,13 +1,13 @@
-# 📌 Event Scheduling & Resource Allocation System
+# Event Scheduling & Resource Allocation System
 
 A simple, clean, and lightweight Flask web application that helps organisations manage events and shared resources without conflicts.  
 
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🗓️ Event Management
+### Event Management
 - Add new events
 - Edit existing events
 - Delete events
@@ -23,7 +23,7 @@ A simple, clean, and lightweight Flask web application that helps organisations 
 
 ---
 
-### 🧰 Resource Management
+### Resource Management
 - Add / Edit / Delete resources
 - Resource fields:
   - Resource Name  
@@ -32,7 +32,7 @@ A simple, clean, and lightweight Flask web application that helps organisations 
 
 ---
 
-### 🔗 Resource Allocation
+### Resource Allocation
 - Allocate a resource to an event
 - Allocation table contains:
   - Event Name  
@@ -43,7 +43,7 @@ A simple, clean, and lightweight Flask web application that helps organisations 
 
 ---
 
-### ⚠️ Conflict Detection Logic
+### Conflict Detection Logic
 The system prevents:
 - Double-booking of the same resource
 - Time overlaps
@@ -55,7 +55,7 @@ If a conflict exists, the user sees a clear error message.
 
 ---
 
-### 📊 Resource Utilisation Report
+### Resource Utilisation Report
 Pick a date range → System calculates:
 - Total hours used by each resource
 - Upcoming bookings
@@ -63,7 +63,7 @@ Pick a date range → System calculates:
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |----------|------------|
@@ -74,7 +74,7 @@ Pick a date range → System calculates:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Event-Scheduling-Resource-Allocation-System/
@@ -100,7 +100,7 @@ Event-Scheduling-Resource-Allocation-System/
 ```
 ---
 
-## 📝 How to Use the Application
+## How to Use the Application
 
 ### ✔ Create Resources
 Examples:
@@ -127,7 +127,7 @@ Select a date range to see:
 
 ---
 
-## 🎯 Purpose of This Project
+## Purpose of This Project
 This assignment tests:
 - Flask fundamentals  
 - Backend logic  
@@ -138,7 +138,7 @@ This assignment tests:
 
 ---
 
-## 📬 Demo video and Screenshots
+## Demo video and Screenshots
 Drive Link - https://drive.google.com/drive/folders/15qomVfBNgTlw2HHivUeljlSVKV5bIkpQ?usp=sharing
 
 
